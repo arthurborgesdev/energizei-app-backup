@@ -1,0 +1,6022 @@
+{
+  system_setup_status: {
+    product_features: {
+      meter_name:
+      meter_model:
+      manufacturer:
+      product_id_number:
+    },
+    manufacturing_data: {
+      meter: {
+        serial_number:
+        date_of_manufacture:
+        hardware_revision:
+      }
+    },
+    firmware_versions: {
+      operating_system: {
+        present_firmware_version: {
+          firmware_version:
+          x_major:
+          y_minor:
+          z_quality:
+        },
+        previous_firmware_version: {
+          firmware_version:
+          x_major:
+          y_minor:
+          z_quality:
+        },
+        date_last_firmware_download:
+      },
+      reset: {
+        present_firmware_version:
+      },
+      language: {
+        present_firmware_version:
+      }
+    meter_resets: {
+      last_unit_restart_datetime:
+      number_sys_restarts:
+      number_ctrl_power_restarts:
+      number_ctrl_power_failures:
+      datetime_last_ctrl_power_failure:
+      duration_last_ctrl_power_failure:
+      cause_last_meter_reset:
+    },
+    timekepping: {
+      present_date_time_7_reg: {
+        year:
+        month:
+        day:
+        hour:
+        minute:
+        second:
+        milisecond:
+      },
+      present_date_time_4_reg: {
+        year:
+        month_day:
+        hour_minute:
+        miliseconds:
+      }
+    },
+    security: {
+      revenue_security: {
+        revenue_sec_switch_status:
+        revenute_sec_status:
+        datetime_last_revenue_sec_state_chg:
+      }
+    }
+  },
+
+  meter_setup_status: {
+    misc_ctrl_status: {
+      active_load_timer:
+      meter_operation_timer:
+    },
+    metering_setup: {
+      power_system: {
+        number_phases:
+        number_wires:
+        power_sys_config:
+        nominal_frequency:
+        nominal_voltage:
+        nominal_current:
+        nominal_power_factor:
+        normal_phase_rotation:
+      },
+      instrument_transformers_1: {
+        number_vts:
+        vt_primary:
+        vt_secondary:
+        number_cts:
+        ct_primary:
+        ct_secondary:
+        ct_primary_n:
+        ct_secondary_n:
+        ct_location:
+        vt_location:
+        vt_connection_type:
+        remapping_indication:
+        logical_phase_A_voltage:
+        logical_phase_B_voltage:
+        logical_phase_C_voltage:
+        logical_phase_N_voltage:
+        logical_phase_A_current:
+        logical_phase_B_current:
+        logical_phase_C_current:
+        logical_phase_N_current:
+      },
+      operating_modes: {
+        peak_current_dmd_last_year:
+        active_load_timer_setpoint:
+      }
+    energy_pulse_output_setup: {
+      alarm_energy_led_mode:
+      energy_pulse_output_chn_01: {
+        energy_channel:
+        digital_output_association:
+        pulse_weight:
+      },
+      energy_pulse_output_chn_02: {
+        energy_channel:
+        digital_output_association:
+        pulse_weight:
+      },
+      energy_pulse_output_chn_03: {
+        energy_channel:
+        digital_output_association:
+        pulse_weight:
+      }
+    }
+  }
+
+  bitmap_status_holding_regs: {
+    digital_input_status_holding_regs: {
+      on_off_status: {
+        digital_input_status_validity:
+        digital_input_status:
+      }
+    },
+    digital_output_status_holding_regs: {
+      on_off_status: {
+        digital_output_status_validity:
+        digital_output_status:
+      },
+      standard_alarms: {
+        standard_1_second_group_1_validity:
+        standard_1_second_group_1:
+        standard_1_second_group_2_validity:
+        standard_1_second_group_2:
+      },
+      custom_1_second_alarms:
+      standard_high_speed_alarms:
+      custom_high_speed_alarms:
+      disturbance_alarms:
+      transient_alarms:
+      waveshape_alarms:
+      unary_alarms: {
+        unary_validity:
+        unary:
+      },
+      digital_alarms:
+      binary_alarms:
+      time_of_day_alarms:
+      logic_alarms:
+    }
+  }
+
+  meter_data_basic: {
+    one_second_metering: {
+      current: {
+        current_A:
+        current_B:
+        current_C:
+        current_N:
+        current_G:
+        current_avg:
+      },
+      current_unbalance: {
+        current_unbal_A:
+        current_unbal_B:
+        current_unbal_C:
+        current_unbal_worst:
+      },
+      voltage: {
+        voltage_A_B:
+        voltage_B_C:
+        voltage_C_A:
+        voltage_L_L_avg:
+        voltage_A_N:
+        voltage_B_N:
+        voltage_C_N:
+        voltage_L_N_avg:
+      },
+      voltage_unbalance: {
+        voltage_unbal_A_B:
+        voltage_unbal_B_C:
+        voltage_unbal_C_A:
+        voltage_unbal_L_L_avg:
+        voltage_unbal_A_N:
+        voltage_unbal_B_N:
+        voltage_unbal_C_N:
+        voltage_unbal_L_N_avg:
+      },
+      power: {
+        active_power_A:
+        active_power_B:
+        active_power_C:
+        active_power_total:
+        reactive_power_A:
+        reactive_power_B:
+        reactive_power_C:
+        reactive_power_total:
+        apparent_power_A:
+        apparent_power_B:
+        apparent_power_C:
+        apparent_power_total:
+      },
+      power_factor: {
+        power_factor_A:
+        power_factor_B:
+        power_factor_C:
+        power_factor_total:
+        displacement_power_factor_A:
+        displacement_power_factor_B:
+        displacement_power_factor_C:
+        displacement_power_factor_total:
+      },
+      frequency:
+      input_metering_rate_channels: {
+        input_met_rate_chn_1:
+        input_met_rate_chn_2:
+        input_met_rate_chn_3:
+        input_met_rate_chn_4:
+      },
+      temperature:
+      miscellaneous: {
+        phase_rotation:
+      }
+    },
+    energy: {
+      accumulated_energy: {
+        accumulated_energy_reset_datetime:
+        active_energy_delivered_into_load:
+        active_energy_delivered_out_load:
+        active_energy_delivered_plus_received:
+        active_energy_delibered_minus_received:
+        reactive_energy_delivered:
+        reactive_energy_received:
+        reactive_energy_delivered_plus_received:
+        reactive_energy_delivered_minus_received:
+        apparent_energy_delivered:
+        apparent_energy_received:
+        apparent_energy_delivered_plus_received:
+        apparent_energy_delivered_minus_received:
+      },
+      input_metering_accumulation: {
+        input_met_accum_ch01_reset_d_t:
+        input_met_accum_ch02_reset_d_t:
+        input_met_accum_ch03_reset_d_t:
+        input_met_accum_ch04_reset_d_t:
+        input_met_accum_ch01:
+        input_met_accum_ch02:
+        input_met_accum_ch03:
+        input_met_accum_ch04:
+      }
+    },
+    demand: {
+      demand_sys_1_power: {
+        power_demand_method:
+        power_demand_interval_duration:
+        power_demand_subinterval_duration:
+        power_demand_elapsed_time_in_interval:
+        power_demand_elapsed_time_in_subinterval:
+        power_demand_peak_reset_datetime:
+      },
+      demand_sys_2_current: {
+        current_demand_method:
+        current_demand_interval_duration:
+        current_demand_subinterval_duration:
+        current_demand_elapsed_time_in_interval:
+        current_demand_elapsed_time_in_subinterval:
+        current_demand_peak_reset_datetime:
+      },
+      demand_sys_3_input_metering:
+      demand_channel_1_active_power: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_2_reactive_power: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_3_apparent_power: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_4_current_A: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_5_current_B: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_6_current_C: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_7_current_N: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_8_current_avg: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_9_current_G: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_10_input_met_ch_1: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_11_input_met_ch_2: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_12_input_met_ch_3: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_13_input_met_ch_4: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_14_active_power_phase_A: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_15_reactive_power_phase_A: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_16_apparent_power_phase_A: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_17_active_power_phase_B: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_18_reactive_power_phase_B: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_19_apparent_power_phase_B: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_20_active_power_phase_C: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_21_reactive_power_phase_C: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      demand_channel_22_apparent_power_phase_C: {
+        demand_system_assignment:
+        register_number_metered_quantity:
+        units_code:
+        last_demand:
+        present_demand:
+        predicted_demand:
+        peak_demand:
+        peak_demand_datetime:
+      },
+      clock_sync_time_of_day:
+      tou_mt_mode:
+      tou_mt_energy_active_rate:
+      tou_mt_energy_reset_datetime:
+      mt_active_energy_delivered_rates: {
+        active_energy_delivered_rate_1:
+        active_energy_delivered_rate_2:
+        active_energy_delivered_rate_3:
+        active_energy_delivered_rate_4:
+        active_energy_delivered_rate_5:
+        active_energy_delivered_rate_6:
+        active_energy_delivered_rate_7:
+        active_energy_delivered_rate_8:
+      },
+      mt_active_energy_received_rates: {
+        active_energy_received_rate_1:
+        active_energy_received_rate_2:
+        active_energy_received_rate_3:
+        active_energy_received_rate_4:
+        active_energy_received_rate_5:
+        active_energy_received_rate_6:
+        active_energy_received_rate_7:
+        active_energy_received_rate_8:
+      },
+      mt_reactive_energy_delivered_rates: {
+        reactive_energy_delivered_rate_1:
+        reactive_energy_delivered_rate_2:
+        reactive_energy_delivered_rate_3:
+        reactive_energy_delivered_rate_4:
+        reactive_energy_delivered_rate_5:
+        reactive_energy_delivered_rate_6:
+        reactive_energy_delivered_rate_7:
+        reactive_energy_delivered_rate_8:
+      },
+      mt_reactive_energy_received_rates: {
+        reactive_energy_received_rate_1:
+        reactive_energy_received_rate_2:
+        reactive_energy_received_rate_3:
+        reactive_energy_received_rate_4:
+        reactive_energy_received_rate_5:
+        reactive_energy_received_rate_6:
+        reactive_energy_received_rate_7:
+        reactive_energy_received_rate_8:
+      },
+      mt_apparent_energy_delivered_rates: {
+        apparent_energy_delivered_rate_1:
+        apparent_energy_delivered_rate_2:
+        apparent_energy_delivered_rate_3:
+        apparent_energy_delivered_rate_4:
+        apparent_energy_delivered_rate_5:
+        apparent_energy_delivered_rate_6:
+        apparent_energy_delivered_rate_7:
+        apparent_energy_delivered_rate_8:
+      },
+      mt_apparent_energy_received_rates: {
+        apparent_energy_received_rate_1:
+        apparent_energy_received_rate_2:
+        apparent_energy_received_rate_3:
+        apparent_energy_received_rate_4:
+        apparent_energy_received_rate_5:
+        apparent_energy_received_rate_6:
+        apparent_energy_received_rate_7:
+        apparent_energy_received_rate_8:
+      },
+      mt_input_metering_channel_01_rates: {
+        input_metering_channel_01_rate_1:
+        input_metering_channel_01_rate_2:
+        input_metering_channel_01_rate_3:
+        input_metering_channel_01_rate_4:
+        input_metering_channel_01_rate_5:
+        input_metering_channel_01_rate_6:
+        input_metering_channel_01_rate_7:
+        input_metering_channel_01_rate_8:
+      },
+      mt_input_metering_channel_02_rates: {
+        input_metering_channel_02_rate_1:
+        input_metering_channel_02_rate_2:
+        input_metering_channel_02_rate_3:
+        input_metering_channel_02_rate_4:
+        input_metering_channel_02_rate_5:
+        input_metering_channel_02_rate_6:
+        input_metering_channel_02_rate_7:
+        input_metering_channel_02_rate_8:
+      },
+      mt_input_metering_channel_03_rates: {
+        input_metering_channel_03_rate_1:
+        input_metering_channel_03_rate_2:
+        input_metering_channel_03_rate_3:
+        input_metering_channel_03_rate_4:
+        input_metering_channel_03_rate_5:
+        input_metering_channel_03_rate_6:
+        input_metering_channel_03_rate_7:
+        input_metering_channel_03_rate_8:
+      },
+      mt_input_metering_channel_04_rates: {
+        input_metering_channel_04_rate_1:
+        input_metering_channel_04_rate_2:
+        input_metering_channel_04_rate_3:
+        input_metering_channel_04_rate_4:
+        input_metering_channel_04_rate_5:
+        input_metering_channel_04_rate_6:
+        input_metering_channel_04_rate_7:
+        input_metering_channel_04_rate_8:
+      },
+      mt_setup_rate_1: {
+        mt_day_type_rate_1:
+        mt_start_time_rate_1:
+        mt_end_time_rate_1:
+        mt_start_month_rate_1:
+        mt_start_day_rate_1:
+        mt_end_month_rate_1:
+        mt_end_day_rate_1:
+      },
+      mt_setup_rate_2: {
+        mt_day_type_rate_2:
+        mt_start_time_rate_2:
+        mt_end_time_rate_2:
+        mt_start_month_rate_2:
+        mt_start_day_rate_2:
+        mt_end_month_rate_2:
+        mt_end_day_rate_2:
+      },
+      mt_setup_rate_3: {
+        mt_day_type_rate_3:
+        mt_start_time_rate_3:
+        mt_end_time_rate_3:
+        mt_start_month_rate_3:
+        mt_start_day_rate_3:
+        mt_end_month_rate_3:
+        mt_end_day_rate_3:
+      },
+      mt_setup_rate_4: {
+        mt_day_type_rate_4:
+        mt_start_time_rate_4:
+        mt_end_time_rate_4:
+        mt_start_month_rate_4:
+        mt_start_day_rate_4:
+        mt_end_month_rate_4:
+        mt_end_day_rate_4:
+      },
+      mt_setup_rate_5: {
+        mt_day_type_rate_5:
+        mt_start_time_rate_5:
+        mt_end_time_rate_5:
+        mt_start_month_rate_5:
+        mt_start_day_rate_5:
+        mt_end_month_rate_5:
+        mt_end_day_rate_5:
+      },
+      mt_setup_rate_6: {
+        mt_day_type_rate_6:
+        mt_start_time_rate_6:
+        mt_end_time_rate_6:
+        mt_start_month_rate_6:
+        mt_start_day_rate_6:
+        mt_end_month_rate_6:
+        mt_end_day_rate_6:
+      },
+      mt_setup_rate_7: {
+        mt_day_type_rate_7:
+        mt_start_time_rate_7:
+        mt_end_time_rate_7:
+        mt_start_month_rate_7:
+        mt_start_day_rate_7:
+        mt_end_month_rate_7:
+        mt_end_day_rate_7:
+      },
+      mt_setup_rate_8: {
+        mt_day_type_rate_8:
+        mt_start_time_rate_8:
+        mt_end_time_rate_8:
+        mt_start_month_rate_8:
+        mt_start_day_rate_8:
+        mt_end_month_rate_8:
+        mt_end_day_rate_8:
+      },
+    }
+  },
+
+  energy_multi_tariff_circuit_32_bit: {
+    mt_active_energy_delivered_rates_32_bit: {
+      active_energy_delivered_rate_1:
+      active_energy_delivered_rate_2:
+      active_energy_delivered_rate_3:
+      active_energy_delivered_rate_4:
+      active_energy_delivered_rate_5:
+      active_energy_delivered_rate_6:
+      active_energy_delivered_rate_7:
+      active_energy_delivered_rate_8:
+    },
+    mt_active_energy_received_rates_32_bit: {
+      active_energy_received_rate_1:
+      active_energy_received_rate_2:
+      active_energy_received_rate_3:
+      active_energy_received_rate_4:
+      active_energy_received_rate_5:
+      active_energy_received_rate_6:
+      active_energy_received_rate_7:
+      active_energy_received_rate_8:
+    },
+    mt_reactive_energy_delivered_rates_32_bit: {
+      reactive_energy_delivered_rate_1:
+      reactive_energy_delivered_rate_2:
+      reactive_energy_delivered_rate_3:
+      reactive_energy_delivered_rate_4:
+      reactive_energy_delivered_rate_5:
+      reactive_energy_delivered_rate_6:
+      reactive_energy_delivered_rate_7:
+      reactive_energy_delivered_rate_8:
+    },
+    mt_reactive_energy_received_rates_32_bit: {
+      reactive_energy_received_rate_1:
+      reactive_energy_received_rate_2:
+      reactive_energy_received_rate_3:
+      reactive_energy_received_rate_4:
+      reactive_energy_received_rate_5:
+      reactive_energy_received_rate_6:
+      reactive_energy_received_rate_7:
+      reactive_energy_received_rate_8:
+    },
+    mt_apparent_energy_delivered_rates_32_bit: {
+      apparent_energy_delivered_rate_1:
+      apparent_energy_delivered_rate_2:
+      apparent_energy_delivered_rate_3:
+      apparent_energy_delivered_rate_4:
+      apparent_energy_delivered_rate_5:
+      apparent_energy_delivered_rate_6:
+      apparent_energy_delivered_rate_7:
+      apparent_energy_delivered_rate_8:
+    },
+    mt_apparent_energy_received_rates_32_bit: {
+      apparent_energy_received_rate_1:
+      apparent_energy_received_rate_2:
+      apparent_energy_received_rate_3:
+      apparent_energy_received_rate_4:
+      apparent_energy_received_rate_5:
+      apparent_energy_received_rate_6:
+      apparent_energy_received_rate_7:
+      apparent_energy_received_rate_8:
+    },
+    mt_input_metering_channel_01_rates_32_bit: {
+      input_metering_channel_01_rate_1:
+      input_metering_channel_01_rate_2:
+      input_metering_channel_01_rate_3:
+      input_metering_channel_01_rate_4:
+      input_metering_channel_01_rate_5:
+      input_metering_channel_01_rate_6:
+      input_metering_channel_01_rate_7:
+      input_metering_channel_01_rate_8:
+    },
+    mt_input_metering_channel_02_rates_32_bit: {
+      input_metering_channel_02_rate_1:
+      input_metering_channel_02_rate_2:
+      input_metering_channel_02_rate_3:
+      input_metering_channel_02_rate_4:
+      input_metering_channel_02_rate_5:
+      input_metering_channel_02_rate_6:
+      input_metering_channel_02_rate_7:
+      input_metering_channel_02_rate_8:
+    },
+    mt_input_metering_channel_03_rates_32_bit: {
+      input_metering_channel_03_rate_1:
+      input_metering_channel_03_rate_2:
+      input_metering_channel_03_rate_3:
+      input_metering_channel_03_rate_4:
+      input_metering_channel_03_rate_5:
+      input_metering_channel_03_rate_6:
+      input_metering_channel_03_rate_7:
+      input_metering_channel_03_rate_8:
+    },
+    mt_input_metering_channel_04_rates_32_bit: {
+      input_metering_channel_04_rate_1:
+      input_metering_channel_04_rate_2:
+      input_metering_channel_04_rate_3:
+      input_metering_channel_04_rate_4:
+      input_metering_channel_04_rate_5:
+      input_metering_channel_04_rate_6:
+      input_metering_channel_04_rate_7:
+      input_metering_channel_04_rate_8:
+    },
+  },
+
+  hmi: {
+    setup: {
+      basic_hmi_setup: {
+        hmi_constrast_setting:
+        hmi_language:
+        hmi_date_format:
+        hmi_iec_ieee_mode:
+        hmi_screen_timeout:
+        hmi_backlight_timeout:
+        hmi_energy_resolution:
+        hmi_current_resolution:
+        hmi_voltage_resolution:
+        hmi_power_resolution:
+      }
+    },
+    misc_hmi: {
+      qr_code_screen_enable:
+    }
+  },
+
+  communications: {
+    rs_485_base: {
+      rs_485_base_port_1_settings: {
+        rs_485_comm_port_ms_protocol:
+        rs_485_comm_port_ms_address:
+        rs_485_comm_port_ms_baudrate:
+        rs_485_comm_port_ms_parity:
+        rs_485_comm_port_ms_modbus_ascii_default_timeout:
+        rs_485_comm_port_ms_mode_selection:
+        rs_485_comm_port_ms_packets_to_this_unit:
+        rs_485_comm_port_ms_packets_to_other_units:
+        rs_485_comm_port_ms_packets_with_bad_crc:
+        rs_485_comm_port_ms_pacets_with_error:
+        rs_485_comm_port_ms_number_of_exceptions:
+        rs_485_comm_port_m_timeout:
+        rs_485_comm_port_m_silent_interval_extension:
+        rs_485_comm_port_m_response_timeout:
+        rs_485_comm_port_m_delay_between_frames:
+        rs_485_comm_port_m_broadcast_enable:
+        rs_485_comm_port_ms_number_of_read_packets:
+        rs_485_comm_port_ms_number_of_write_packets:
+      }
+
+    }
+  },
+
+  inputs_outputs: {
+    number_of_multi_tariff_rates_active:
+    number_of_digital_inputs_used_to_control_multi_tariff:
+    demand_sync_setup: {
+      digital_input_associations_with_demand_systems: {
+        demand_system_1_power:
+        demand_system_2_current:
+      },
+      digital_output_associations_with_demand_systems: {
+        demand_system_1_power:
+        demand_system_2_current:
+      },
+    },
+    input_metering_setup: {
+      input_metering_channel_01: {
+        label:
+        pulse_weight:
+        consumption_units_code:
+        digital_input_association:
+      },
+      input_metering_channel_02: {
+        label:
+        pulse_weight:
+        consumption_units_code:
+        digital_input_association:
+      },
+      input_metering_channel_03: {
+        label:
+        pulse_weight:
+        consumption_units_code:
+        digital_input_association:
+      },
+      input_metering_channel_04: {
+        label:
+        pulse_weight:
+        consumption_units_code:
+        digital_input_association:
+      }
+    },
+    digital_inputs_setup: {
+      base_unit_digital_input_DI_1: {
+        type:
+        control_mode:
+        label:
+        debounce_time:
+      },
+      base_unit_digital_input_DI_2: {
+        type:
+        control_mode:
+        label:
+        debounce_time:
+      },
+      base_unit_digital_input_DI_3: {
+        type:
+        control_mode:
+        label:
+        debounce_time:
+      },
+      base_unit_digital_input_DI_4: {
+        type:
+        control_mode:
+        label:
+        debounce_time:
+      }
+    },
+    digital_inputs_status: {
+      on_off_status_digital_input_stat_base_unit:
+      base_unit_digital_input_DI_1: {
+        count:
+        on_time:
+      },
+      base_unit_digital_input_DI_2: {
+        count:
+        on_time:
+      },
+      base_unit_digital_input_DI_3: {
+        count:
+        on_time:
+      },
+      base_unit_digital_input_DI_4: {
+        count:
+        on_time:
+      }
+    },
+    digital_outputs_setup: {
+      base_unit_digital_output_DO_1: {
+        type:
+        label:
+        behavioral_mode:
+        on_time_for_timed_mode:
+      },
+      base_unit_digital_output_DO_2: {
+        type:
+        label:
+        behavioral_mode:
+        on_time_for_timed_mode:
+      }
+    },
+    digital_output_status: {
+      on_off_status_digital_output_stat_base_unit:
+      base_unit_digital_output_DO_1: {
+        operating_mode_status:
+        control_mode_status:
+        behavioral_mode_status:
+        count:
+        on_time:
+      },
+      base_unit_digital_output_DO_2: {
+        operating_mode_status:
+        control_mode_status:
+        behavioral_mode_status:
+        count:
+        on_time:
+      }
+    }
+  },
+
+  alarms: {
+    alarm_status: {
+      detected_priority_status:
+      enabled_alarm_bitmaps: {
+        standard_1_second_1:
+        standard_1_second_2:
+        standard_1_second_3:
+        unary:
+        digital_1:
+      },
+      detected_alarm_bitmaps: {
+        standard_1_second_1:
+        standard_1_second_2:
+        standard_1_second_3:
+        unary:
+        digital_1:
+      },
+      unacknowledge_high_priority_alarm_bitmaps: {
+        standard_1_second_1:
+        standard_1_second_2:
+        standard_1_second_3:
+        unary:
+        digital_1:
+      }
+    },
+    alarm_event_queue: {
+      version_of_event_queue:
+      size_of_event_queue:
+      number_of_entries_in_event_queue:
+      entry_number_of_most_recent_event:
+      entry_001: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_002: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_003: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_004: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_005: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_006: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_007: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_008: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_009: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_010: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_011: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_012: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_013: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_014: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_015: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_016: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_017: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_018: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_019: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_020: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_021: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_022: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_023: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_024: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_025: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_026: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_027: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_028: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_029: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_030: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_031: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_032: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_033: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_034: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_035: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_036: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_037: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_038: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_039: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_040: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+    }
+    alarm_history_log: {
+      size_of_history_log:
+      number_of_entries_in_history_log:
+      entry_number_of_most_recent_event:
+      entry_001: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_002: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_003: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_004: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_005: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_006: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_007: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_008: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_009: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_010: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_011: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_012: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_013: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_014: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_015: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_016: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_017: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_018: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_019: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_020: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_021: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_022: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_023: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_024: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_025: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_026: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_027: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_028: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_029: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_030: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_031: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_032: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_033: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_034: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_035: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_036: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_037: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_038: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_039: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+      entry_040: {
+        entry_number:
+        datetime:
+        record_type:
+        register_number_or_event_code:
+        value:
+        sequence_number:
+      },
+    },
+    alarm_counters: {
+      summary: {
+        total_counter:
+        low_priority_counter:
+        medium_priority_counter:
+        high_priority_counter:
+      },
+      one_second_alarms_standard: {
+        over_current_phase:
+        under_current_phase:
+        over_current_neutral:
+        over_current_ground:
+        over_voltage_L_L:
+        under_voltage_L_L:
+        over_voltage_L_N:
+        under_voltage_L_N:
+        over_power_active:
+        over_power_reactive:
+        over_power_apparent:
+        lead_power_factor_true:
+        lag_power_factor_true:
+        lead_power_factor_displacement:
+        lag_power_factor_displacement:
+        over_demand_active_power_present:
+        over_demand_active power_last:
+        over_demand_active power_predicted:
+        over_demand_reactive power_present:
+        over_demand_reactive power_last:
+        over_demand_reactive power_predicted:
+        over_demand_apparent power_present:
+        over_demand_apparent power_last:
+        over_demand_apparent power_predicted:
+        over_frequency:
+        under_frequency:
+        over_voltage_unbalance:
+        over_voltage_total_harmonic_distortion:
+        phase_loss:
+      },
+      unary_alarms: {
+        meter_powerup_aka_control_power_loss:
+        meter_reset:
+        meter_diagnostic:
+        phase_reversal:
+      },
+      digital_alarms: {
+        digital_alarm_DI_1:
+        digital_alarm_DI_2:
+        digital_alarm_DI_3:
+        digital_alarm_DI_4:
+      }
+    },
+    one_second_alarms_standard: {
+      over_current_phase: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      under_current_phase: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_current_neutral: {
+        attributes:
+        source_register_A:
+        reserved:
+        reserved:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_current_ground: {
+        attributes:
+        source_register_A:
+        reserved:
+        reserved:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_voltage_L_L: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      under_voltage_L_L: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_voltage_L_N: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      under_voltage_L_N: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_power_active: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_power_reactive: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_power_apparent: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      leading_power_factor_true: {
+        attributes:
+        source_register_A:
+        reserved:
+        reserved:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      lagging_power_factor_true: {
+        attributes:
+        source_register_A:
+        reserved:
+        reserved:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      leading_power_factor_displacement: {
+        attributes:
+        source_register_A:
+        reserved:
+        reserved:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      lagging_power_factor_displacement: {
+        attributes:
+        source_register_A:
+        reserved:
+        reserved:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_demand_active_power_present: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_demand_active_power_last: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_demand_active_power_predicted: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_demand_reactive_power_present: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_demand_reactive_power_last: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_demand_reactive_power_predicted: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_demand_apparent_power_present: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_demand_apparent_power_last: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_demand_apparent_power_predicted: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_frequency: {
+        attributes:
+        source_register_A:
+        reserved:
+        reserved:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      under_frequency: {
+        attributes:
+        source_register_A:
+        reserved:
+        reserved:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_voltage_unbalance: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      over_voltage_total_harmonic_distortion: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      phase_loss: {
+        attributes:
+        source_register_A:
+        source_register_B:
+        source_register_C:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      }
+    },
+    one_second_alarms_custom: {
+      custom_alarm_1: {
+        label:
+        attributes:
+        source_register_A:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      custom_alarm_2: {
+        label:
+        attributes:
+        source_register_A:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      custom_alarm_3: {
+        label:
+        attributes:
+        source_register_A:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      custom_alarm_4: {
+        label:
+        attributes:
+        source_register_A:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      custom_alarm_5: {
+        label:
+        attributes:
+        source_register_A:
+        pickup_setpoint:
+        pickup_time_delay:
+        dropout_setpoint:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      meter_power_up_control_power_loss: {
+        attributes:
+        digital_outputs_to_associate_standard:
+      },
+      meter_reset: {
+        attributes:
+        digital_outputs_to_associate_standard:
+      },
+      meter_diagnostic: {
+        attributes:
+        digital_outputs_to_associate_standard:
+      },
+      phase_reversal: {
+        attributes:
+        digital_outputs_to_associate_standard:
+      }
+    },
+    digital_alarms: {
+      digital_alarm_DI_1: {
+        attributes:
+        pickup_time_delay:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      digital_alarm_DI_2: {
+        attributes:
+        pickup_time_delay:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      digital_alarm_DI_3: {
+        attributes:
+        pickup_time_delay:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      },
+      digital_alarm_DI_4: {
+        attributes:
+        pickup_time_delay:
+        dropout_time_delay:
+        digital_outputs_to_associate_standard:
+      }
+    },
+    logic_alarms: {
+      logic_alarm_1: {
+        label:
+        attributes:
+        source_alarm_A:
+        source_alarm_B:
+        source_alarm_C:
+        source_alarm_D:
+        digital_outputs_to_associate_standard:
+      },
+      logic_alarm_2: {
+        label:
+        attributes:
+        source_alarm_A:
+        source_alarm_B:
+        source_alarm_C:
+        source_alarm_D:
+        digital_outputs_to_associate_standard:
+      },
+      logic_alarm_3: {
+        label:
+        attributes:
+        source_alarm_A:
+        source_alarm_B:
+        source_alarm_C:
+        source_alarm_D:
+        digital_outputs_to_associate_standard:
+      },
+      logic_alarm_4: {
+        label:
+        attributes:
+        source_alarm_A:
+        source_alarm_B:
+        source_alarm_C:
+        source_alarm_D:
+        digital_outputs_to_associate_standard:
+      },
+      logic_alarm_5: {
+        label:
+        attributes:
+        source_alarm_A:
+        source_alarm_B:
+        source_alarm_C:
+        source_alarm_D:
+        digital_outputs_to_associate_standard:
+      },
+      logic_alarm_6: {
+        label:
+        attributes:
+        source_alarm_A:
+        source_alarm_B:
+        source_alarm_C:
+        source_alarm_D:
+        digital_outputs_to_associate_standard:
+      },
+      logic_alarm_7: {
+        label:
+        attributes:
+        source_alarm_A:
+        source_alarm_B:
+        source_alarm_C:
+        source_alarm_D:
+        digital_outputs_to_associate_standard:
+      },
+      logic_alarm_8: {
+        label:
+        attributes:
+        source_alarm_A:
+        source_alarm_B:
+        source_alarm_C:
+        source_alarm_D:
+        digital_outputs_to_associate_standard:
+      },
+      logic_alarm_9: {
+        label:
+        attributes:
+        source_alarm_A:
+        source_alarm_B:
+        source_alarm_C:
+        source_alarm_D:
+        digital_outputs_to_associate_standard:
+      },
+      logic_alarm_10: {
+        label:
+        attributes:
+        source_alarm_A:
+        source_alarm_B:
+        source_alarm_C:
+        source_alarm_D:
+        digital_outputs_to_associate_standard:
+        data_type_custom_alarm_1:
+        data_type_custom_alarm_2:
+        data_type_custom_alarm_3:
+        data_type_custom_alarm_4:
+        data_type_custom_alarm_5:
+      }
+    }
+  },
+
+  files: {
+    datalogs: {
+      energy_log: {
+        logging_status:
+        allocated_file_size:
+        allocated_record_size:
+        record_management_method:
+        file_status:
+        number_of_records_in_file:
+        first_record_sequence_number:
+        last_record_sequence_number:
+        topic_mode:
+        start_time:
+        stop_time:
+        interval_control_minutes:
+        interval_control_seconds:
+        date_time_last_clear:
+        record_item_1:
+        record_item_2:
+        record_item_3:
+        record_item_4:
+        record_item_5:
+        record_item_6:
+        record_item_7:
+        record_item_8:
+        record_item_9:
+        record_item_10:
+        record_item_11:
+        record_item_12:
+        record_item_13:
+        record_item_14:
+      }
+    }
+  },
+
+  diagnostics: {
+    self_test_results_processor_loading:
+    miscellaneous_meter_self_test:
+    energy_preset_values: {
+      accumulated_energy_32_bit_floating_point_values: {
+        active_energy_delivered_into_load:
+        active_energy_received_out_of_load:
+        reactive_energy_delivered:
+        reactive_energy_received:
+        apparent_energy_delivered:
+        apparent_energy_received:
+      },
+      accumulated_energy: {
+        accumulated_energy_preset_datetime:
+        active_energy_delivered_into_load:
+        active_energy_received_out_of_load:
+        reactive_energy_delivered:
+        reactive_energy_received:
+        apparent_energy_delivered:
+        apparent_energy_received:
+        size_of_maint_log:
+        number_of_entries_in_maint_log:
+        entry_number_of_most_recent_event:
+      }
+    }
+  },
+
+  meter_data_advanced: {
+    high_speed_metering_frequency:
+    power_quality_1_to_3_seconds: {
+      total_harmonic_distortion_current: {
+        THD_current_A:
+        THD_current_B:
+        THD_current_C:
+        THD_current_N:
+        THD_current_G:
+        thd_current_A:
+        thd_current_B:
+        thd_current_C:
+        thd_current_N:
+        thd_current_G:
+      },
+      total_demand_distortion:
+      total_harmonic_distortion_voltage: {
+        THD_voltage_A_B:
+        THD_voltage_B_C:
+        THD_voltage_C_A:
+        THD_voltage_L_L:
+        THD_voltage_A_N:
+        THD_voltage_B_N:
+        THD_voltage_C_N:
+        THD_voltage_L_N:
+        thd_voltage_A_B:
+        thd_voltage_B_C:
+        thd_voltage_C_A:
+        thd_voltage_L_L:
+        thd_voltage_A_N:
+        thd_voltage_B_N:
+        thd_voltage_C_N:
+        thd_voltage_L_N:
+      },
+      k_factor: {
+        k_factor_A:
+        k_factor_B:
+        k_factor_C:
+      },
+      crest_factor: {
+        crest_factor_A:
+        crest_factor_B:
+        crest_factor_C:
+        crest_factor_N:
+        crest_factor_voltage_A_B:
+        crest_factor_voltage_B_C:
+        crest_factor_voltage_C_A:
+        crest_factor_voltage_A_N:
+        crest_factor_voltage_B_N:
+        crest_factor_voltage_C_N:
+      },
+      fundamental_magnitude_angles_voltage: {
+        voltage_A_B: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h26: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h27: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h28: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h29: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h30: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h31: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h32: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h33: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h34: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h35: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h36: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h37: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h38: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h39: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h40: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h41: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h42: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h43: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h44: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h45: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h46: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h47: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h48: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h49: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h50: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h51: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h52: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h53: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h54: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h55: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h56: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h57: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h58: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h59: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h60: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h61: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h62: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h63: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+        voltage_B_C: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h26: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h27: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h28: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h29: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h30: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h31: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h32: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h33: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h34: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h35: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h36: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h37: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h38: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h39: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h40: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h41: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h42: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h43: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h44: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h45: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h46: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h47: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h48: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h49: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h50: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h51: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h52: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h53: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h54: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h55: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h56: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h57: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h58: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h59: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h60: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h61: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h62: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h63: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+        voltage_C_A: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h26: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h27: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h28: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h29: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h30: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h31: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h32: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h33: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h34: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h35: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h36: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h37: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h38: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h39: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h40: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h41: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h42: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h43: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h44: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h45: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h46: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h47: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h48: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h49: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h50: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h51: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h52: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h53: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h54: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h55: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h56: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h57: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h58: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h59: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h60: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h61: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h62: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h63: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+        voltage_A_N: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h26: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h27: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h28: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h29: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h30: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h31: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h32: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h33: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h34: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h35: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h36: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h37: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h38: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h39: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h40: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h41: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h42: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h43: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h44: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h45: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h46: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h47: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h48: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h49: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h50: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h51: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h52: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h53: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h54: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h55: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h56: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h57: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h58: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h59: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h60: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h61: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h62: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h63: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+        voltage_B_N: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h26: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h27: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h28: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h29: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h30: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h31: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h32: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h33: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h34: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h35: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h36: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h37: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h38: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h39: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h40: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h41: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h42: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h43: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h44: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h45: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h46: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h47: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h48: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h49: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h50: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h51: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h52: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h53: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h54: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h55: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h56: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h57: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h58: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h59: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h60: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h61: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h62: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h63: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+        voltage_C_B: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h26: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h27: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h28: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h29: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h30: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h31: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h32: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h33: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h34: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h35: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h36: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h37: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h38: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h39: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h40: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h41: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h42: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h43: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h44: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h45: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h46: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h47: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h48: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h49: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h50: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h51: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h52: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h53: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h54: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h55: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h56: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h57: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h58: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h59: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h60: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h61: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h62: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h63: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+      },
+      fundamental_magnitude_angles_current: {
+        current_A: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h26: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h27: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h28: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h29: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h30: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h31: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h32: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h33: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h34: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h35: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h36: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h37: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h38: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h39: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h40: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h41: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h42: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h43: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h44: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h45: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h46: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h47: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h48: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h49: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h50: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h51: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h52: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h53: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h54: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h55: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h56: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h57: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h58: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h59: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h60: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h61: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h62: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h63: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+        current_B: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h26: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h27: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h28: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h29: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h30: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h31: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h32: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h33: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h34: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h35: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h36: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h37: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h38: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h39: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h40: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h41: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h42: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h43: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h44: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h45: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h46: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h47: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h48: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h49: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h50: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h51: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h52: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h53: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h54: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h55: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h56: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h57: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h58: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h59: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h60: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h61: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h62: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h63: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+        current_C: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h26: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h27: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h28: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h29: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h30: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h31: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h32: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h33: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h34: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h35: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h36: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h37: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h38: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h39: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h40: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h41: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h42: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h43: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h44: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h45: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h46: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h47: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h48: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h49: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h50: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h51: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h52: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h53: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h54: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h55: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h56: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h57: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h58: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h59: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h60: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h61: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h62: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h63: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+        current_N: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h26: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h27: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h28: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h29: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h30: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h31: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h32: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h33: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h34: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h35: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h36: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h37: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h38: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h39: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h40: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h41: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h42: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h43: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h44: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h45: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h46: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h47: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h48: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h49: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h50: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h51: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h52: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h53: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h54: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h55: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h56: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h57: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h58: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h59: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h60: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h61: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h62: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h63: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+        current_G: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h26: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h27: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h28: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h29: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h30: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h31: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h32: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h33: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h34: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h35: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h36: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h37: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h38: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h39: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h40: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h41: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h42: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h43: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h44: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h45: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h46: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h47: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h48: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h49: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h50: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h51: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h52: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h53: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h54: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h55: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h56: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h57: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h58: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h59: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h60: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h61: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h62: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h63: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+      }
+    },
+    minimum_values: {
+      min_max_reset_datetime:
+      current: {
+        min_current_A:
+        min_current_B:
+        min_current_C:
+        min_current_N:
+        min_current_G:
+        min_current_avg:
+      },
+      current_unbalance: {
+        min_current_unbalance_A:
+        min_current_unbalance_B:
+        min_current_unbalance_C:
+        min_current_unbalance_worst:
+      },
+      voltage: {
+        min_voltage_A_B:
+        min_voltage_B_C:
+        min_voltage_C_A:
+        min_voltage_L_L_avg:
+        min_voltage_A_N:
+        min_voltage_B_N:
+        min_voltage_C_N:
+        min_voltage_L_N_avg:
+      },
+      voltage_unbalance: {
+        min_voltage_unbalance_A_B:
+        min_voltage_unbalance_B_C:
+        min_voltage_unbalance_C_A:
+        min_voltage_unbalance_L_L_worst:
+        min_voltage_unbalance_A_N:
+        min_voltage_unbalance_B_N:
+        min_voltage_unbalance_C_N:
+        min_voltage_unbalance_L_N_worst:
+      },
+      power: {
+        min_active_power_A:
+        min_active_power_B:
+        min_active_power_C:
+        min_active_power_total:
+        min_reactive_power_A:
+        min_reactive_power_B:
+        min_reactive_power_C:
+        min_reactive_power_total:
+        min_apparent_power_A:
+        min_apparent_power_B:
+        min_apparent_power_C:
+        min_apparent_power_total:
+      },
+      power_factor:
+        min_power_factor_A:
+        min_power_factor_B:
+        min_power_factor_C:
+        min_power_factor_total:
+        min_displacement_power_factor_A:
+        min_displacement_power_factor_B:
+        min_displacement_power_factor_C:
+        min_displacement_pf_total:
+      },
+      total_harmonic_distortion_current: {
+        min_THD_current_A:
+        min_THD_current_B:
+        min_THD_current_C:
+        min_THD_current_N:
+        min_THD_current_G:
+        min_thd_current_A:
+        min_thd_current_B:
+        min_thd_current_C:
+        min_thd_current_N:
+        min_thd_current_G:
+      },
+      min_total_demand_distortion:
+      total_harmonic_distortion_voltage: {
+        min_THD_Voltage_A_B:
+        min_THD_Voltage_B_C:
+        min_THD_Voltage_C_A:
+        min_THD_Voltage_L_L_avg:
+        min_THD_Voltage_A_N:
+        min_THD_Voltage_B_N:
+        min_THD_Voltage_C_N:
+        min_THD_Voltage_L_N_avg:
+        min_thd_Voltage_A_B:
+        min_thd_Voltage_B_C:
+        min_thd_Voltage_C_A:
+        min_thd_Voltage_L_L_avg:
+        min_thd_Voltage_A_N:
+        min_thd_Voltage_B_N:
+        min_thd_Voltage_C_N:
+        min_thd_Voltage_L_N_avg:
+      },
+      min_frequency:
+      min_input_metering_rate_01:
+      min_input_metering_rate_02:
+      min_input_metering_rate_03:
+      min_input_metering_rate_04:
+      min_temperature:
+      min_temp_datetime_also_in_diagnostics:
+    },
+    maximum_values: {
+      current: {
+        max_current_A:
+        max_current_B:
+        max_current_C:
+        max_current_N:
+        max_current_G:
+        max_current_avg:
+      },
+      current_unbalance: {
+        max_current_unbalance_A:
+        max_current_unbalance_B:
+        max_current_unbalance_C:
+        max_current_unbalance_worst:
+      },
+      voltage: {
+        max_voltage_A_B:
+        max_voltage_B_C:
+        max_voltage_C_A:
+        max_voltage_L_L_avg:
+        max_voltage_A_N:
+        max_voltage_B_N:
+        max_voltage_C_N:
+        max_voltage_L_N_avg:
+      },
+      voltage_unbalance: {
+        max_voltage_unbalance_A_B:
+        max_voltage_unbalance_B_C:
+        max_voltage_unbalance_C_A:
+        max_voltage_unbalance_L_L_worst:
+        max_voltage_unbalance_A_N:
+        max_voltage_unbalance_B_N:
+        max_voltage_unbalance_C_N:
+        max_voltage_unbalance_L_N_worst:
+      },
+      power: {
+        max_active_power_A:
+        max_active_power_B:
+        max_active_power_C:
+        max_active_power_total:
+        max_reactive_power_A:
+        max_reactive_power_B:
+        max_reactive_power_C:
+        max_reactive_power_total:
+        max_apparent_power_A:
+        max_apparent_power_B:
+        max_apparent_power_C:
+        max_apparent_power_total:
+      },
+      power_factor:
+        max_power_factor_A:
+        max_power_factor_B:
+        max_power_factor_C:
+        max_power_factor_total:
+        max_displacement_power_factor_A:
+        max_displacement_power_factor_B:
+        max_displacement_power_factor_C:
+        max_displacement_pf_total:
+      },
+      total_harmonic_distortion_current: {
+        max_THD_current_A:
+        max_THD_current_B:
+        max_THD_current_C:
+        max_THD_current_N:
+        max_THD_current_G:
+        max_thd_current_A:
+        max_thd_current_B:
+        max_thd_current_C:
+        max_thd_current_N:
+        max_thd_current_G:
+      },
+      max_total_demand_distortion:
+      total_harmonic_distortion_voltage: {
+        max_THD_Voltage_A_B:
+        max_THD_Voltage_B_C:
+        max_THD_Voltage_C_A:
+        max_THD_Voltage_L_L_avg:
+        max_THD_Voltage_A_N:
+        max_THD_Voltage_B_N:
+        max_THD_Voltage_C_N:
+        max_THD_Voltage_L_N_avg:
+        max_thd_Voltage_A_B:
+        max_thd_Voltage_B_C:
+        max_thd_Voltage_C_A:
+        max_thd_Voltage_L_L_avg:
+        max_thd_Voltage_A_N:
+        max_thd_Voltage_B_N:
+        max_thd_Voltage_C_N:
+        max_thd_Voltage_L_N_avg:
+      },
+      max_frequency:
+      max_input_metering_rate_01:
+      max_input_metering_rate_02:
+      max_input_metering_rate_03:
+      max_input_metering_rate_04:
+      max_temperature:
+      max_temp_datetime_also_in_diagnostics:
+    },
+    firmware_versions_advanced_multi_cpu_and_programmable_logic: {
+      fpga_1: {
+        present_firmware_version: {
+          firmware_version:
+          x_major:
+          y_minor:
+          z_quality:
+        },
+        previous_firmware_version: {
+          firmware_version:
+          x_major:
+          y_minor:
+          z_quality:
+        },
+        datetime_of_last_firmware_download:
+        bacnet_device_ID:
+        bacnet_UDP_port:
+        bacnet_BBMD_status:
+        bacnet_BBMD_ip_address:
+        bacnet_BBMD_port:
+        bacnet_BBMD_time_to_live:
+        bacnet_APDU_timeout:
+        bacnet_APDU_number_of_retries:
+      }
+    }
+  }
+}
+

@@ -1,0 +1,1761 @@
+{
+  timekepping: {
+    year:
+    month:
+    day:
+    hour:
+    minute:
+    second:
+    milisecond:
+  },
+
+  digital_input_status: {
+    digital_input_01:
+    digital_input_02:
+    digital_input_03:
+    digital_input_04:
+  },
+  digital_output_status: {
+    digital_output_01:
+    digital_output_02:
+  },
+
+  meter_data_basic: {
+    current: {
+      current_A:
+      current_B:
+      current_C:
+      current_N:
+      current_G:
+      current_avg:
+    },
+    current_unbalance: {
+      current_unbal_A:
+      current_unbal_B:
+      current_unbal_C:
+      current_unbal_worst:
+    },
+    voltage: {
+      voltage_A_B:
+      voltage_B_C:
+      voltage_C_A:
+      voltage_L_L_avg:
+      voltage_A_N:
+      voltage_B_N:
+      voltage_C_N:
+      voltage_L_N_avg:
+    },
+    voltage_unbalance: {
+      voltage_unbal_A_B:
+      voltage_unbal_B_C:
+      voltage_unbal_C_A:
+      voltage_unbal_L_L_avg:
+      voltage_unbal_A_N:
+      voltage_unbal_B_N:
+      voltage_unbal_C_N:
+      voltage_unbal_L_N_avg:
+    },
+    power: {
+      active_power_A:
+      active_power_B:
+      active_power_C:
+      active_power_total:
+      reactive_power_A:
+      reactive_power_B:
+      reactive_power_C:
+      reactive_power_total:
+      apparent_power_A:
+      apparent_power_B:
+      apparent_power_C:
+      apparent_power_total:
+    },
+    power_factor: {
+      power_factor_A:
+      power_factor_B:
+      power_factor_C:
+      power_factor_total:
+      displacement_power_factor_A:
+      displacement_power_factor_B:
+      displacement_power_factor_C:
+      displacement_power_factor_total:
+    },
+    frequency:
+    temperature:
+    miscellaneous: {
+      phase_rotation:
+      power_factor_total_iec:
+      power_factor_total_lead_lag:
+      power_factor_total_iec:
+      power_factor_total_lead_lag:
+    }
+  },
+  // Retirados da versão without-demand-energy
+  //#energy: {
+    accumulated_energy_reset_datetime:
+    active_energy_delivered_into_load:
+    active_energy_delivered_out_load:
+    active_energy_delivered_plus_received:
+    active_energy_delibered_minus_received:
+    reactive_energy_delivered:
+    reactive_energy_received:
+    reactive_energy_delivered_plus_received:
+    reactive_energy_delivered_minus_received:
+    apparent_energy_delivered:
+    apparent_energy_received:
+    apparent_energy_delivered_plus_received:
+    apparent_energy_delivered_minus_received:
+  },
+  //#demand: {
+    demand_sys_1_power: {
+      power_demand_method:
+      power_demand_interval_duration:
+      power_demand_subinterval_duration:
+      power_demand_elapsed_time_in_interval_sec:
+      power_demand_elapsed_time_in_subinterval_sec:
+      power_demand_peak_reset_datetime:
+    },
+    demand_sys_2_current: {
+      current_demand_method:
+      current_demand_interval_duration:
+      current_demand_subinterval_duration:
+      current_demand_elapsed_time_in_interval_sec:
+      current_demand_elapsed_time_in_subinterval_sec:
+      current_demand_peak_reset_datetime:
+    },
+    demand_channel_1_active_power: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_2_reactive_power: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_3_apparent_power: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_4_current_A: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_5_current_B: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_6_current_C: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_7_current_N: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_8_current_avg: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_9_current_G: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_14_active_power_phase_A: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_15_reactive_power_phase_A: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_16_apparent_power_phase_A: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_17_active_power_phase_B: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_18_reactive_power_phase_B: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_19_apparent_power_phase_B: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_20_active_power_phase_C: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_21_reactive_power_phase_C: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    },
+    demand_channel_22_apparent_power_phase_C: {
+      demand_system_assignment:
+      register_number_metered_quantity:
+      units_code:
+      last_demand:
+      present_demand:
+      predicted_demand:
+      peak_demand:
+      peak_demand_datetime:
+    }
+  },
+
+  power_quality: {
+    high_speed_metering_frequency:
+    total_harmonic_distortion_current: {
+        THD_current_A:
+        THD_current_B:
+        THD_current_C:
+        THD_current_N:
+        THD_current_G:
+        thd_current_A:
+        thd_current_B:
+        thd_current_C:
+        thd_current_N:
+        thd_current_G:
+      },
+    total_demand_distortion:
+    total_harmonic_distortion_voltage: {
+        THD_voltage_A_B:
+        THD_voltage_B_C:
+        THD_voltage_C_A:
+        THD_voltage_L_L:
+        THD_voltage_A_N:
+        THD_voltage_B_N:
+        THD_voltage_C_N:
+        THD_voltage_L_N:
+        thd_voltage_A_B:
+        thd_voltage_B_C:
+        thd_voltage_C_A:
+        thd_voltage_L_L:
+        thd_voltage_A_N:
+        thd_voltage_B_N:
+        thd_voltage_C_N:
+        thd_voltage_L_N:
+      },
+    k_factor: {
+      k_factor_A:
+      k_factor_B:
+      k_factor_C:
+    },
+    crest_factor: {
+      crest_factor_A:
+      crest_factor_B:
+      crest_factor_C:
+      crest_factor_N:
+      crest_factor_voltage_A_B:
+      crest_factor_voltage_B_C:
+      crest_factor_voltage_C_A:
+      crest_factor_voltage_A_N:
+      crest_factor_voltage_B_N:
+      crest_factor_voltage_C_N:
+    },
+    fundamental_magnitude_angles_voltage: {
+      voltage_A_B: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+      voltage_B_C: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+      voltage_C_A: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+      voltage_A_N: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+      voltage_B_N: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+      voltage_C_N: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        }
+    },
+    fundamental_magnitude_angles_current: {
+      current_A: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+      current_B: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+      current_C: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+      current_N: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        },
+      current_G: {
+          h1: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h2: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h3: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h4: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h5: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h6: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h7: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h8: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h9: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h10: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h11: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h12: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h13: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h14: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h15: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h16: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h17: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h18: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h19: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h20: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h21: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h22: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h23: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h24: {
+            percentage:
+            magnitude:
+            angle:
+          },
+          h25: {
+            percentage:
+            magnitude:
+            angle:
+          }
+        }
+    }
+  },
+  }
+}
+

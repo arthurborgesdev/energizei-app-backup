@@ -1,0 +1,27 @@
+ 
+{
+  "name": "energizei_app",
+  "version": "1.0.0",
+  "description": "App to pool PM5560 IP, retrieve data and save on database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "energy",
+    "monitoring",
+    "webapp",
+    "energizei"
+  ],
+  "author": "Arthur Moisés",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.19",
+    "pug": "^2.0.0-beta6",
+    "request": "^2.79.0",
+    "traverse": "^0.6.6"
+  }
+}
+
