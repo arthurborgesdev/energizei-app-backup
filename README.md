@@ -1,20 +1,52 @@
 # energizei-app-backup
-(Backup do código energizei_app do servidor energ-deploy Digital Ocean)
 
-## Pra que serve?
-
-Se comunica com o medidor de Energia para acessar os dados de medição e mandá-los para o servidor, a fim de serem gravados no banco de dados.
+(Backup from codebase energizei_app from energ-deploy server in Digital Ocean)
 
 
-## Como funciona?
+## What it is for?
+
+Communicates with the energy meter to access measurements data and send it to the server, to be stored in the database.
 
 
-## Arquivos principais e suas funções
+## Main files and its functions
 
 **/app.js**
 
-Grava as tags em uma variável chamada "oneSecond_tag". Essas tags contém as strings dos registradores separadas por vírgula e em que cada registrador segue o formato: PL__^HXXXX[YY]__PL.
+Store the tags in a variable called "oneSecond_tag". These tags contains the strings of the registers separated by a comma following the format "PL__^HXXXX[YY]__PL".
 
-Em que XXXX é um grupo de números contendo os registradores e YY a quantidade de caracteres ou bytes contendo nesse registrador. Se referenciar aos manuais da SCHNEIDER para identificar qual registrador se corresponde ao que quer extrair. No código atual foram extraídos as medições mais básicas e as harmônicas de tensão e corrente até a ordem 25.
+"XXXX" is a group of numbers representing the registers and YY represents the quantity of characters or bytes inside this register. It is necessary to consult the SCHNEIDER manual to identify each register and its corresponding functionality. The actual codebase contains the most basic measurements and the harmonics from voltage and current until the 25th order.
 
-É feito então um POST com essa tag para uma url interna ao medidor de forma a gravar os dados recebidos em uma String. Todos os elementos da String são então separados em um array utilizando a separação por vírgula e feito a gravação em um objeto contendo vários campos (parâmetros), cada um resolvido utilizando uma função específica (consultar documentação da SCHNEIDER para quais funções utilizar). Depois, esses dados são gravados em um banco MongoDB a cada 1 segundo (procurar pelo script a cada 60 segundos ou reconstruí-lo a partir desse).
+Then, a POST with this tag is made to a internal URL of the meter to store the data received in a String. All elements of the String is then separate in a Array using the split by comma and then made a recording in a object containing several fields (parameters), each one resolved using a specific function (refer to SCHNEIDER documentation, for the specific one for use). Then, this data is stored in a MongoDB database each 1 second.
+
+
+## Built with
+
+- PM5560
+- Digital Ocean servers
+- Node.js/JavaScript
+
+## Usage 
+
+- This codebase works with a PM5560 and Raspberry PI. It exists for future reference only of my coding skills and creativity in 2018.
+
+## Author
+
+👤 **Arthur Borges**
+
+- GitHub: [@arthuborgesdev](https://github.com/arthurborgesdev)
+- Twitter: [@arthurmoises](https://twitter.com/arthurmoises)
+- LinkedIn: [Arthur Borges](https://linkedin.com/in/arthurmoises)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Energizei Engenharia and all related people
+- Lots and lots of Stack Overflow questions and answers
